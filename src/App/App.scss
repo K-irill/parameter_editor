@@ -1,0 +1,87 @@
+.wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .add-options {
+    .input-container {
+      .formik-component {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .formik-errors__text {
+          margin: 0;
+          color: #d91313;
+        }
+
+        label {
+          margin-bottom: 3px;
+        }
+
+        input {
+          box-sizing: border-box;
+          outline: none;
+          width: 350px;
+          height: 20px;
+        }
+
+        &--error {
+          input {
+            border: 1px solid #d91313;
+          }
+        }
+      }
+
+      .btn-container {
+        width: 350px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          cursor: pointer;
+          width: 150px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .params {
+    max-width: 600px;
+    margin: 20px auto;
+
+    .params__edit {
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      span {
+        width: 150px;
+        margin-right: 7px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      input {
+        box-sizing: border-box;
+        outline: none;
+        width: 350px;
+        height: 20px;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &--hiden {
+      display: none;
+    }
+  }
+}
